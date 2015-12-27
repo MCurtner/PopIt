@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BA21A5601C1C446800F7F2CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21A55F1C1C446800F7F2CE /* AppDelegate.swift */; };
-		BA21A5621C1C446800F7F2CE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA21A5611C1C446800F7F2CE /* GameScene.sks */; };
 		BA21A5641C1C446800F7F2CE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21A5631C1C446800F7F2CE /* GameScene.swift */; };
 		BA21A5661C1C446800F7F2CE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21A5651C1C446800F7F2CE /* GameViewController.swift */; };
 		BA21A5691C1C446800F7F2CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA21A5671C1C446800F7F2CE /* Main.storyboard */; };
@@ -16,6 +15,10 @@
 		BA21A56E1C1C446800F7F2CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA21A56C1C1C446800F7F2CE /* LaunchScreen.storyboard */; };
 		BA21A5791C1C446800F7F2CE /* PopItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21A5781C1C446800F7F2CE /* PopItTests.swift */; };
 		BA21A5841C1C446800F7F2CE /* PopItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21A5831C1C446800F7F2CE /* PopItUITests.swift */; };
+		BA21A5921C1C894700F7F2CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21A5911C1C894700F7F2CE /* Extensions.swift */; };
+		BA21A5941C1C938700F7F2CE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21A5931C1C938700F7F2CE /* MenuViewController.swift */; };
+		BA42D5861C1CA4B700D6CB85 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA42D5851C1CA4B700D6CB85 /* iAd.framework */; };
+		BADEEA381C1DB1BE005541E5 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADEEA371C1DB1BE005541E5 /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		BA21A55C1C1C446800F7F2CE /* PopIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA21A55F1C1C446800F7F2CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA21A5611C1C446800F7F2CE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		BA21A5631C1C446800F7F2CE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BA21A5651C1C446800F7F2CE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BA21A5681C1C446800F7F2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		BA21A57F1C1C446800F7F2CE /* PopItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA21A5831C1C446800F7F2CE /* PopItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopItUITests.swift; sourceTree = "<group>"; };
 		BA21A5851C1C446800F7F2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA21A5911C1C894700F7F2CE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BA21A5931C1C938700F7F2CE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BA42D5851C1CA4B700D6CB85 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		BADEEA371C1DB1BE005541E5 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA42D5861C1CA4B700D6CB85 /* iAd.framework in Frameworks */,
+				BADEEA381C1DB1BE005541E5 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,8 @@
 		BA21A5531C1C446800F7F2CE = {
 			isa = PBXGroup;
 			children = (
+				BADEEA371C1DB1BE005541E5 /* GameKit.framework */,
+				BA42D5851C1CA4B700D6CB85 /* iAd.framework */,
 				BA21A55E1C1C446800F7F2CE /* PopIt */,
 				BA21A5771C1C446800F7F2CE /* PopItTests */,
 				BA21A5821C1C446800F7F2CE /* PopItUITests */,
@@ -102,9 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				BA21A55F1C1C446800F7F2CE /* AppDelegate.swift */,
-				BA21A5611C1C446800F7F2CE /* GameScene.sks */,
+				BA21A5911C1C894700F7F2CE /* Extensions.swift */,
 				BA21A5631C1C446800F7F2CE /* GameScene.swift */,
 				BA21A5651C1C446800F7F2CE /* GameViewController.swift */,
+				BA21A5931C1C938700F7F2CE /* MenuViewController.swift */,
 				BA21A5671C1C446800F7F2CE /* Main.storyboard */,
 				BA21A56A1C1C446800F7F2CE /* Assets.xcassets */,
 				BA21A56C1C1C446800F7F2CE /* LaunchScreen.storyboard */,
@@ -199,6 +210,12 @@
 				TargetAttributes = {
 					BA21A55B1C1C446800F7F2CE = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = M77G4VQ69B;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					BA21A5731C1C446800F7F2CE = {
 						CreatedOnToolsVersion = 7.2;
@@ -235,7 +252,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA21A5621C1C446800F7F2CE /* GameScene.sks in Resources */,
 				BA21A56E1C1C446800F7F2CE /* LaunchScreen.storyboard in Resources */,
 				BA21A56B1C1C446800F7F2CE /* Assets.xcassets in Resources */,
 				BA21A5691C1C446800F7F2CE /* Main.storyboard in Resources */,
@@ -264,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA21A5641C1C446800F7F2CE /* GameScene.swift in Sources */,
+				BA21A5941C1C938700F7F2CE /* MenuViewController.swift in Sources */,
 				BA21A5661C1C446800F7F2CE /* GameViewController.swift in Sources */,
 				BA21A5601C1C446800F7F2CE /* AppDelegate.swift in Sources */,
+				BA21A5921C1C894700F7F2CE /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,10 +425,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PopIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = matthewcurtner.PopIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -418,10 +440,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PopIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = matthewcurtner.PopIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -494,6 +520,7 @@
 				BA21A58A1C1C446800F7F2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA21A58B1C1C446800F7F2CE /* Build configuration list for PBXNativeTarget "PopItTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +529,7 @@
 				BA21A58D1C1C446800F7F2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA21A58E1C1C446800F7F2CE /* Build configuration list for PBXNativeTarget "PopItUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +538,7 @@
 				BA21A5901C1C446800F7F2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

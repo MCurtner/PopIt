@@ -1,13 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8118" systemVersion="15A172" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Zk-rt-BqS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8098"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="CZu-7O-aZL">
+            <objects>
+                <viewController id="5Zk-rt-BqS" customClass="MenuViewController" customModule="PopIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I76-FC-buG"/>
+                        <viewControllerLayoutGuide type="bottom" id="reo-oB-9WA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Azs-JN-NqO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzK-bj-QSs">
+                                <rect key="frame" x="150" y="278" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3Sw-gu-RLI"/>
+                                    <constraint firstAttribute="height" constant="50" id="ciW-bS-0qL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonHandler:" destination="5Zk-rt-BqS" eventType="touchUpInside" id="aeO-bg-n3D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEU-ck-J2a">
+                                <rect key="frame" x="150" y="355" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Vi-Cu-9kk"/>
+                                    <constraint firstAttribute="width" constant="300" id="cwq-jZ-szU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Leaderboard">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLeaderBoard:" destination="5Zk-rt-BqS" eventType="touchUpInside" id="9PQ-Jv-a9A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVN-y3-csw">
+                                <rect key="frame" x="150" y="194" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="QCk-Gl-hqs"/>
+                                    <constraint firstAttribute="height" constant="50" id="RVw-6f-j7L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonHandler:" destination="5Zk-rt-BqS" eventType="touchUpInside" id="VkM-aC-anB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74067133665084839" blue="0.61067491769790649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fzK-bj-QSs" firstAttribute="centerX" secondItem="Azs-JN-NqO" secondAttribute="centerX" id="0yt-54-75u"/>
+                            <constraint firstItem="fzK-bj-QSs" firstAttribute="top" secondItem="RVN-y3-csw" secondAttribute="bottom" constant="34" id="8CB-u6-D6T"/>
+                            <constraint firstItem="RVN-y3-csw" firstAttribute="centerX" secondItem="Azs-JN-NqO" secondAttribute="centerX" id="JpJ-Zc-uUS"/>
+                            <constraint firstItem="RVN-y3-csw" firstAttribute="centerY" secondItem="Azs-JN-NqO" secondAttribute="centerY" constant="-81" id="UeF-DJ-tru"/>
+                            <constraint firstItem="TEU-ck-J2a" firstAttribute="top" secondItem="fzK-bj-QSs" secondAttribute="bottom" constant="27" id="kLH-BV-BL2"/>
+                            <constraint firstItem="TEU-ck-J2a" firstAttribute="centerX" secondItem="Azs-JN-NqO" secondAttribute="centerX" id="lLc-n1-bPY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0Z-io-wCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="420"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameViewController" id="BV1-FR-VrT" customClass="GameViewController" customModule="PopIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
@@ -15,11 +86,52 @@
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezw-TV-SkE">
+                                <rect key="frame" x="260" y="540" width="76" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LHw-jr-2ft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuButtonHandler:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0vH-iG-m7T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5E2-k8-1h3">
+                                <rect key="frame" x="260" y="492" width="76" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WmN-cG-Vg9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="d9I-t9-pXI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonHandler:" destination="BV1-FR-VrT" eventType="touchUpInside" id="DSN-22-HNn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ezw-TV-SkE" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" constant="-244" id="1dz-pB-WaC"/>
+                            <constraint firstItem="5E2-k8-1h3" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" constant="-244" id="BPx-hn-wyG"/>
+                            <constraint firstItem="ezw-TV-SkE" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="240" id="XWu-V9-j6h"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="ezw-TV-SkE" secondAttribute="bottom" constant="20" id="gII-aA-VdZ"/>
+                            <constraint firstItem="5E2-k8-1h3" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="240" id="h4e-du-NME"/>
+                            <constraint firstItem="ezw-TV-SkE" firstAttribute="top" secondItem="5E2-k8-1h3" secondAttribute="bottom" constant="8" id="nAv-JB-NB3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="shareButton" destination="5E2-k8-1h3" id="0FP-oz-Dyr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="639" y="420"/>
         </scene>
     </scenes>
 </document>
